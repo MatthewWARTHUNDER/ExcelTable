@@ -1,0 +1,101 @@
+:root{
+    --inputs-background: #D9D9D9;
+    --txt-color-white: #ffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 2vh;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2vw;
+    margin-top: 4vh;
+}
+
+.wrap-inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    padding-left: 40px;
+    margin-bottom: 1vh;
+}
+
+input{
+    border-radius: 999px;
+    width: 422px;
+    height: 53px;
+    border: none;
+    background-color: var(--inputs-background);
+    padding-left: 30px;
+    
+}
+
+thead{
+    background-color: black;
+    color: var(--txt-color-white);
+}
+
+.wrap-btn{
+    width: 100%;
+    text-align: center;
+    margin-top: 4vh;
+}
+
+.btn{
+ background-color: rgb(19, 53, 19);
+ color: var(--txt-color-white);
+ padding: 10px 30px;
+ border-radius: 990px;
+ border: none;
+ transition: all 200ms linear;
+ border: 2px solid transparent;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transition: all 2.0s linear;
+    box-shadow: rgb(0, 0, 0.35);
+    border: 2px solid green;
+    color: rgb(68, 191, 83);
+}
+
+#tabela{
+    background-color: var(--inputs-background);
+    width: 80%;
+    text-align: left;
+}
+
+.wrap-tb{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vh;
+
+}
+
+@media (width < 300px){
+    input{
+        width: 200px;
+        height: 45px;
+    }
+}
